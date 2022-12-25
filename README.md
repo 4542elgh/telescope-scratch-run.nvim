@@ -1,9 +1,12 @@
 # Telescope Scratch Run integration
-[Telescope](https://github.com/nvim-telescope/telescope.nvim) picker for running simple code via stdin to language compiler.
+[Telescope](https://github.com/nvim-telescope/telescope.nvim) picker for running simple test code via stdin to language compiler and output to message window.
 
 ## How does it look?
 Color scheme is [Darcula](https://github.com/4542elgh/darcula.nvim) made with TJ's colorbuddy plugin
 ![image](https://user-images.githubusercontent.com/17227723/209482354-e055c4ad-12ca-4f16-8c2f-b89d2a409d40.png)
+<br/>
+Using Python as an example
+![image](https://user-images.githubusercontent.com/17227723/209482702-f391db96-ae7d-46bc-9e7e-195a8dc4e76c.png)
 
 ## Why?
 This plugin was created so I do not have to create a file or go to playground to test simple code. A lot of times, I just want to see if syntax is correct or validate my logic is correct.

@@ -62,12 +62,10 @@ local function make_entry()
 
     return function(entry)
         return {
-            -- valid = true,
             value = entry,
             ordinal = entry.cmd,
             display = make_display,
             lang = entry.lang,
-            -- col = 1,
             cmd = entry.cmd,
         }
     end
@@ -82,7 +80,7 @@ end
 
 local function make_picker()
     pickers.new({}, {
-        prompt_title = "REPL Language",
+        prompt_title = "Complier Language",
         finder = make_finder(),
         sorter = conf.generic_sorter({}),
         attach_mappings = function(prompt_bufnr)
