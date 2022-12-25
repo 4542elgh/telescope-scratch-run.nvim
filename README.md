@@ -33,7 +33,7 @@ require('telescope').load_extension('scratch_run')
 
 The extension provides the following picker:
 ```viml
-" output current system mapped drive
+" output available compilers
 :Telescope scratch_run 
 ```
 Lua equivalent:
