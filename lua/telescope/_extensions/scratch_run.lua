@@ -96,5 +96,6 @@ end
 return require('telescope').register_extension {
     exports = {
         scratch_run = make_picker,
+        all = make_picker,
     }
 }
