@@ -6,7 +6,7 @@ Color scheme is [Darcula](https://github.com/4542elgh/darcula.nvim) made with TJ
 ![image](https://user-images.githubusercontent.com/17227723/209482354-e055c4ad-12ca-4f16-8c2f-b89d2a409d40.png)
 <br/>
 Using Python as an example
-![image](https://user-images.githubusercontent.com/17227723/209482702-f391db96-ae7d-46bc-9e7e-195a8dc4e76c.png)
+![image](https://user-images.githubusercontent.com/17227723/209483105-80ac03df-bf33-4bda-ac7e-cae2e25c23da.png)
 
 ## Why?
 This plugin was created so I do not have to create a file or go to playground to test simple code. A lot of times, I just want to see if syntax is correct or validate my logic is correct.
