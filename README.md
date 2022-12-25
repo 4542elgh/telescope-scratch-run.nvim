@@ -1,5 +1,5 @@
 # Telescope Scratch Run integration
-[Telescope](https://github.com/nvim-telescope/telescope.nvim) picker for running simple test code via stdin to language compiler.
+[Telescope](https://github.com/nvim-telescope/telescope.nvim) picker for running simple code via stdin to language compiler.
 
 ## How does it look?
 Color scheme is [Darcula](https://github.com/4542elgh/darcula.nvim) made with TJ's colorbuddy plugin
