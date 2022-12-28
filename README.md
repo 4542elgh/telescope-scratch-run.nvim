@@ -2,11 +2,11 @@
 [Telescope](https://github.com/nvim-telescope/telescope.nvim) picker for running simple code via stdin to language compiler and output to message window.
 
 ## How does it look?
-Color scheme is [Darcula](https://github.com/4542elgh/darcula.nvim) made with TJ's colorbuddy plugin
-![image](https://user-images.githubusercontent.com/17227723/209482354-e055c4ad-12ca-4f16-8c2f-b89d2a409d40.png)
+Color scheme is [Darcula](https://github.com/4542elgh/darcula.nvim) made with TJ's colorbuddy plugin<br/>
+<img src="https://user-images.githubusercontent.com/17227723/209482354-e055c4ad-12ca-4f16-8c2f-b89d2a409d40.png" alt="drawing" width="400"/>
 <br/>
-Using Python as an example
-![image](https://user-images.githubusercontent.com/17227723/209483105-80ac03df-bf33-4bda-ac7e-cae2e25c23da.png)
+Using Python as an example<br/>
+<img src="https://user-images.githubusercontent.com/17227723/209483105-80ac03df-bf33-4bda-ac7e-cae2e25c23da.png" alt="drawing" width="500"/>
 
 ## Why?
 This plugin was created so I do not have to create a file or go to playground to test simple code. A lot of times, I just want to see if syntax is correct or validate my logic is correct.
@@ -23,10 +23,35 @@ If you are using [packer.nvim](https://github.com/wbthomason/packer.nvim), use t
 ```lua
 use "4542elgh/telescope-scratch-run.nvim"
 ```
+If you are using [lazy.nvim](https://github.com/folke/lazy.nvim), use this to setup `scratch_run`
+```lua
+"4542elgh/telescope-scratch-run.nvim"
+```
 
 In Telescope setup, require smb_unc module
 ```lua
 require('telescope').load_extension('scratch_run')
+```
+
+## Configuration
+For user defined command, you can use the following config structure under Telescope's `setup.extensions`
+```lua
+require("telescope").setup({
+    defaults = {
+        ...
+    },
+    extensions = {
+        ...
+        scratch_run = {
+            custom_compilers = {
+                lua = {
+                    name = "lua",
+                    cmd = ":w !jit" -- Make sure your command start with ':w !' then follow by your compiler command
+                }
+            }
+        }
+    },
+    })
 ```
 
 ## Usage
