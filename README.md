@@ -51,7 +51,7 @@ require("telescope").setup({
             }
         }
     },
-    })
+})
 ```
 
 ## Usage
