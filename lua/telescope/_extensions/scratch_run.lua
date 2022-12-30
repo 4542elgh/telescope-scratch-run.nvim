@@ -95,7 +95,9 @@ end
 
 return require("telescope").register_extension {
     setup = function(user_opts, _)
-        compilers = vim.tbl_extend('force', compilers, user_opts.custom_compilers)
+        if not next(user_opts) == nil then
+            compilers = vim.tbl_extend('force', compilers, user_opts.custom_compilers)
+        end
     end,
     exports = {
         scratch_run = make_picker,
