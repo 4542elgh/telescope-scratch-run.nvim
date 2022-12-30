@@ -95,7 +95,7 @@ end
 
 return require("telescope").register_extension {
     setup = function(user_opts, _)
-        if not next(user_opts) == nil then
+        if next(user_opts) ~= nil then
             compilers = vim.tbl_extend('force', compilers, user_opts.custom_compilers)
         end
     end,
