@@ -2,7 +2,7 @@
 local ok, telescope = pcall(require, 'telescope')
 
 if not ok then
-    error 'Install nvim-telescope/telescope.nvim to use 4542elgh/telescope-scratch-run.nvim.'
+    vim.notify('Install nvim-telescope/telescope.nvim to use 4542elgh/telescope-scratch-run.nvim.', vim.log.levels.ERROR)
 end
 
 -- Telescope utils
@@ -37,7 +37,6 @@ end
 
 -- This is what will be showing in Telescope
 local function make_entry()
- 
     -- Spacing
     local displayer = entry_display.create {
         separator = "",
